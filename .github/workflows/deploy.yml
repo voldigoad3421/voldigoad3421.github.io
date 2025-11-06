@@ -44,6 +44,7 @@ jobs:
           # Copy static files (index.html, wsl scripts, etc)
           cp index.html _site/
           cp -r wsl _site/
+          cp -r starwars _site/
           cp README.md _site/
           # Copy built VitePress docs
           cp -r docs/.vitepress/dist _site/docs
