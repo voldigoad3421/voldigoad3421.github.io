@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            animation: fadeIn 0.5s ease-in;
+        }
+        .emoji {
+            font-size: 20rem;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+            user-select: none;
+        }
+        .message {
+            color: #fff;
+            font-size: 2rem;
+            margin-top: 2rem;
+            opacity: 0;
+            animation: slideIn 1s ease-out 0.5s forwards;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-30px); }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @media (max-width: 768px) {
+            .emoji {
+                font-size: 10rem;
+            }
+            .message {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji" onclick="rotate(this)">🖕</div>
+        <div class="message">Got 'em! 😂</div>
+    </div>
+    <script>
+        function rotate(element) {
+            element.style.transform = 'rotate(360deg)';
+            element.style.transition = 'transform 0.5s';
+            setTimeout(() => {
+                element.style.transform = '';
+            }, 500);
+        }
+    </script>
+</body>
+</html>
