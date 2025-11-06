@@ -1,0 +1,27 @@
+{
+  "name": "voldigoad3421.github.io",
+  "version": "1.0.0",
+  "description": "Central hub for fast access to IT administration scripts and tools.",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voldigoad3421/voldigoad3421.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/voldigoad3421/voldigoad3421.github.io/issues"
+  },
+  "homepage": "https://github.com/voldigoad3421/voldigoad3421.github.io#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.23"
+  }
+}

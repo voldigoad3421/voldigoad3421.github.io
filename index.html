@@ -64,9 +64,29 @@
             border-radius: 4px;
             font-size: 0.85rem;
         }
+        .docs-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        .docs-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
+    <a href="/docs/" class="docs-link">📚 Documentation →</a>
     <div class="container">
         <h1>⚡ Quick Scripts</h1>
         <p class="subtitle">Fast setup scripts and tools for IT administration</p>
