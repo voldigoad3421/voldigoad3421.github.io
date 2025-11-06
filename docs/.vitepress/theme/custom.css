@@ -1,0 +1,190 @@
+/**
+ * Custom styles for Quick Scripts documentation
+ */
+
+/* Brand colors matching the deploy mode gradient */
+:root {
+  --vp-c-brand-1: #667eea;
+  --vp-c-brand-2: #764ba2;
+  --vp-c-brand-3: #5568d3;
+  --vp-c-brand-soft: rgba(102, 126, 234, 0.14);
+}
+
+/* Dark mode brand colors */
+.dark {
+  --vp-c-brand-1: #8b9aff;
+  --vp-c-brand-2: #9d6bd0;
+  --vp-c-brand-3: #7386ea;
+  --vp-c-brand-soft: rgba(139, 154, 255, 0.16);
+}
+
+/* Hero gradient background */
+.VPHero {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: 12px;
+  padding: 48px 24px !important;
+}
+
+.dark .VPHero {
+  background: linear-gradient(135deg, rgba(139, 154, 255, 0.08) 0%, rgba(157, 107, 208, 0.08) 100%);
+}
+
+/* Enhanced feature cards */
+.VPFeature {
+  transition: all 0.3s ease;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-brand-1);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.dark .VPFeature:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Code blocks styling */
+.vp-code-group {
+  margin: 16px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+div[class*='language-'] {
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+/* Custom blocks enhancement */
+.custom-block {
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+.custom-block.tip {
+  border-left: 4px solid var(--vp-c-brand-1);
+}
+
+.custom-block.warning {
+  border-left: 4px solid #e2a336;
+}
+
+.custom-block.danger {
+  border-left: 4px solid #d9534f;
+}
+
+.custom-block.info {
+  border-left: 4px solid #5bc0de;
+}
+
+/* Better link styling */
+.vp-doc a {
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.vp-doc a:hover {
+  opacity: 0.8;
+}
+
+/* Enhanced hero actions */
+.VPButton.brand {
+  background: linear-gradient(135deg, var(--vp-c-brand-1) 0%, var(--vp-c-brand-2) 100%);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.VPButton.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+}
+
+/* Sidebar active link */
+.VPSidebarItem.is-active > .item > .link {
+  background: linear-gradient(90deg, rgba(102, 126, 234, 0.1) 0%, transparent 100%);
+  border-left: 3px solid var(--vp-c-brand-1);
+  padding-left: 13px;
+}
+
+/* Search box enhancement */
+.DocSearch-Button {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.DocSearch-Button:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 32px;
+  margin-top: 64px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .VPHero {
+    padding: 32px 16px !important;
+  }
+
+  .VPFeature {
+    margin-bottom: 12px;
+  }
+}
+
+/* Custom utility classes */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  margin-left: 8px;
+}
+
+/* Improve code font */
+code {
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* Better table styling */
+.vp-doc table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vp-doc th {
+  background: var(--vp-c-bg-soft);
+  font-weight: 600;
+}
+
+.vp-doc tr:hover {
+  background: var(--vp-c-bg-soft);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced headings */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.vp-doc h2 {
+  padding-top: 24px;
+  border-top: 1px solid var(--vp-c-divider);
+  margin-top: 48px;
+}
