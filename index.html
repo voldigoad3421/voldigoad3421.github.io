@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Scripts & Tools</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { opacity: 0.9; margin-bottom: 40px; font-size: 1.1rem; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .card:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 { margin-bottom: 8px; font-size: 1.3rem; }
+        .card p { opacity: 0.9; font-size: 0.9rem; }
+        .status {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-top: 8px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .active { background: rgba(76, 175, 80, 0.4); }
+        .coming { background: rgba(255, 152, 0, 0.4); }
+        code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ Quick Scripts</h1>
+        <p class="subtitle">Fast setup scripts and tools for IT administration</p>
+
+        <div class="grid">
+            <a href="/wsl" class="card">
+                <h3>🐧 WSL</h3>
+                <p>WSL development environment setup</p>
+                <span class="status active">Active</span>
+            </a>
+
+            <a href="/windows" class="card">
+                <h3>🪟 Windows</h3>
+                <p>Windows configuration scripts</p>
+                <span class="status coming">Coming Soon</span>
+            </a>
+
+            <a href="/mdt" class="card">
+                <h3>📦 MDT</h3>
+                <p>Microsoft Deployment Toolkit</p>
+                <span class="status coming">Coming Soon</span>
+            </a>
+
+            <a href="/hyperv" class="card">
+                <h3>🖥️ Hyper-V</h3>
+                <p>Hyper-V management scripts</p>
+                <span class="status coming">Coming Soon</span>
+            </a>
+
+            <a href="/sysadmin" class="card">
+                <h3>🔧 Sysadmin</h3>
+                <p>System administration tools</p>
+                <span class="status coming">Coming Soon</span>
+            </a>
+
+            <a href="/networking" class="card">
+                <h3>🌐 Networking</h3>
+                <p>Network configuration scripts</p>
+                <span class="status coming">Coming Soon</span>
+            </a>
+        </div>
+
+        <div style="margin-top: 40px; opacity: 0.8; font-size: 0.9rem;">
+            <p><strong>Quick Install Example:</strong></p>
+            <code>curl -fsSL voldigoad3421.github.io/wsl/setup.sh | bash</code>
+        </div>
+    </div>
+</body>
+</html>

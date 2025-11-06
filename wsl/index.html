@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSL Setup Scripts</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            padding: 20px;
+        }
+        .container {
+            max-width: 700px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .subtitle { opacity: 0.9; margin-bottom: 30px; }
+        .command-box {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .command-box h3 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        code {
+            display: block;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+        .link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        .back {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐧 WSL Setup</h1>
+        <p class="subtitle">Quick setup scripts for WSL development environment</p>
+
+        <div class="command-box">
+            <h3>📦 Complete Setup (Recommended)</h3>
+            <p style="margin-bottom: 10px; opacity: 0.9; font-size: 0.9rem;">
+                Installs Node.js, npm, Git, build tools, and optional Oh My Zsh
+            </p>
+            <code>curl -fsSL voldigoad3421.github.io/wsl/setup.sh | bash</code>
+        </div>
+
+        <div class="command-box">
+            <h3>📦 Node.js Only</h3>
+            <p style="margin-bottom: 10px; opacity: 0.9; font-size: 0.9rem;">
+                Install Node.js via nvm
+            </p>
+            <code>curl -fsSL voldigoad3421.github.io/wsl/nodejs.sh | bash</code>
+        </div>
+
+        <div class="command-box">
+            <h3>🎨 Terminal Setup Only</h3>
+            <p style="margin-bottom: 10px; opacity: 0.9; font-size: 0.9rem;">
+                Beautiful terminal with Oh My Zsh and colors
+            </p>
+            <code>curl -fsSL voldigoad3421.github.io/wsl/terminal.sh | bash</code>
+        </div>
+
+        <a href="https://github.com/voldigoad3421/voldiwsldeploy" class="link">
+            📂 View Full Repository →
+        </a>
+
+        <div style="margin-top: 30px;">
+            <a href="/" class="link back">← Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
